@@ -29,7 +29,19 @@ sudo fastboot flash root root-console-20240601_180941.ext4<br>
 
 
 <br>
+<br>
 
+Testing the build <br>
+make qemu-riscv64_smode_defconfig
+
+<br>
+make menuconfig<br>
+	CONFIG_ENV_IS_IN_FAT=y<br>
+	CONFIG_ENV_FAT_INTERFACE="virtio"<br>
+	CONFIG_ENV_FAT_DEVICE_AND_PART="0:1"<br>
+ <br>
+ 
+ 
 
 
 
