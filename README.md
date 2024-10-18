@@ -13,6 +13,7 @@ sudo dd if=FSBL.bin of=/dev/mmcblk2boot0 seek=512 bs=1<br>
 sync<br>
 <br>
 <br>
+![image_play-6231803274eeb49587419621fa4e4f6f](https://github.com/user-attachments/assets/78be26f5-3525-45ee-8279-933993d6d3b0)
 
 **Lichee PI 4a** <br>
 
