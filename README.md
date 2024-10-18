@@ -15,3 +15,17 @@ sync
 
 **Lichee PI 4a** <br>
 
+Their crap mothod <br>>
+
+sudo fastboot flash ram u-boot-with-spl-plastic16g.bin
+sudo fastboot reboot
+sleep 5
+sudo fastboot flash uboot u-boot-with-spl-plastic16g.bin
+sudo fastboot flash boot boot-console-20240529_143041.ext4u
+sudo fastboot flash root root-console-20240601_180941.ext4
+<br>
+
+
+
+
+
