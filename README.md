@@ -42,6 +42,7 @@ make menuconfig<br>
 	CONFIG_ENV_FAT_INTERFACE="virtio"<br>
 	CONFIG_ENV_FAT_DEVICE_AND_PART="0:1"<br>
  <br>
+ Machine modes
  
  
 
