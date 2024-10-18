@@ -42,7 +42,35 @@ make menuconfig<br>
 	CONFIG_ENV_FAT_INTERFACE="virtio"<br>
 	CONFIG_ENV_FAT_DEVICE_AND_PART="0:1"<br>
  <br>
- Machine modes
+ Starting from Scratch - things to know  <br>
+U-Boot<br>
+ make qemu-riscv64_smode_defconfig
+ <br>
+ Start it<br>
+ qemu-system-riscv64 -m 2G \<br>
+-nographic \<br>
+-machine virt \<br>
+-smp 8 \<br>
+-kernel u-boot/u-boot.bin<br>
+Make the default kernel
+<br>
+make defconfig
+<br>
+make menuconfig
+<br>
+Now boot it. <br>
+qemu-system-riscv64 -m 2G \<br>
+-nographic \<br>
+-machine virt \<br>
+-smp 8 \<br>
+-kernel linux/arch/riscv/boot/Image \<br>
+-append "console=ttyS0" \<br>
+<br>
+Let’s create a 128 MB disk image:<br>
+dd if=/dev/zero of=disk.img bs=1M count=128<br>
+Size it<br>
+cfdisk disk.img
+
  
  
 
