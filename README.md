@@ -6,7 +6,7 @@
 
 **BPI-F3 Notes**
 <br>
-Banana Pi Dpcs <br>
+Banana Pi Docs <br><br>
 echo 0 | sudo tee /sys/block/mmcblk2boot0/force_ro<br>
 sudo dd if=bootinfo_emmc.bin of=/dev/mmcblk2boot0<br>
 sudo dd if=FSBL.bin of=/dev/mmcblk2boot0 seek=512 bs=1<br>
@@ -16,7 +16,7 @@ sync<br>
 
 **Lichee PI 4a** <br>
 
-Their crap mothod <br>>
+Their crap mothod <br><br>
 
 sudo fastboot flash ram u-boot-with-spl-plastic16g.bin<br>
 sudo fastboot reboot<br>
